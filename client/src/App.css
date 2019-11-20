@@ -901,21 +901,20 @@ table {
     margin-top: 2vh;
   }
 }
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 900px) {
   .form-main {
     height: 90vh;
   }
 
   form {
     width: 40vw;
-    height: 75vh;
+    height: 90vh;
     padding: 50px;
   }
   form input {
     margin-top: 3vh;
   }
   form textarea {
-    height: 40vh;
     resize: none;
   }
 
@@ -933,7 +932,7 @@ table {
   }
 
   h2 {
-    padding-top: 10vh;
+    padding-top: 30vh;
   }
 
   .contact-main {
@@ -941,8 +940,46 @@ table {
   }
 }
 @media only screen and (min-width: 320px) {
-  h1, h2 {
+  .auth {
+    padding-top: 5vh;
+  }
+  .auth form {
+    height: 50vh;
+    justify-content: center;
+    margin: 5vh 0;
+  }
+  .auth h1 {
+    font-size: 4em;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .auth form {
+    width: 75%;
+    margin: 5vh auto;
+    height: 50vh;
+  }
+  .auth h1 {
+    font-size: 6em;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .auth {
+    padding: 15vh 0;
+  }
+  .auth form {
+    width: 40%;
+    height: 55vh;
+  }
+  .auth h1 {
+    font-size: 6em;
+  }
+}
+@media only screen and (min-width: 320px) {
+  h1,
+h2 {
     font-family: "Righteous", cursive;
+    color: white;
   }
 
   h1,
@@ -954,7 +991,10 @@ h2 {
     font-size: 1.2rem;
   }
 
-  h3, h4 {
+  h3,
+h4,
+button,
+input {
     font-family: "Cabin", sans-serif;
   }
 
@@ -964,7 +1004,8 @@ h2 {
   }
 }
 @media only screen and (min-width: 768px) {
-  h1, h2 {
+  h1,
+h2 {
     font-size: 3rem;
   }
 
@@ -979,9 +1020,21 @@ h2 {
   h4 {
     font-size: 1.3em;
   }
+
+  form button,
+form input,
+textarea {
+    height: 6vh;
+    font-size: 2em;
+  }
+
+  textarea {
+    height: 20vh;
+  }
 }
-@media only screen and (min-width: 1400px) {
-  h1, h2 {
+@media only screen and (min-width: 900px) {
+  h1,
+h2 {
     font-size: 5em;
   }
 }

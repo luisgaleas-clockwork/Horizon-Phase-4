@@ -14,14 +14,13 @@ class Product extends React.Component {
       genre: "none",
       price: "none"
     }
-
+     ///////////////////////////////////////
+    //looking for value of the SELECT tag//
+     //////////////////////////////////////
     this.musicGenre = (e) => {
-      console.log('VALUE CHANGED', e.target.value)
-      this.setState({ genre: e.target.value }, () => {
-        console.log('HEY, IM INSIDE THE CALLBACK AFTER SETSTATE', this.state.genre)
-      })
+      this.setState({ genre: e.target.value }, () => console.log('Genre -', this.state.genre))
     }
-
+    //Filter buttons
     this.stateLow = () => {
       this.setState({ price: "low" }, () => console.log(this.state.price))
     }
@@ -31,8 +30,9 @@ class Product extends React.Component {
     this.stateNone = () => {
       this.setState({ price: "none" }, () => console.log(this.state.price))
     }
-
-
+    /////////////////////////////////////////////
+    // Renders products based on price in state//
+     /////////////////////////////////////////////
     this.renderProduct = () => {
       if (this.state.price === "high") {
         return (

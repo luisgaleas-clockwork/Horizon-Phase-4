@@ -14,8 +14,8 @@ const NavBar = (props) => {
 						<div className="redirect">
 							<Link className="nav-link" to="/" onClick={Close}>Home <span className="sr-only">(current)</span></Link>
 							<Link className="nav-link" to="/products" onClick={Close}>Products</Link>
-							<Link className="nav-link" to="/rth">RTH</Link>
-							<Link className="nav-link" to="/logout">Log Out</Link>
+							<Link className="nav-link" to="/rth" onClick={Close}>RTH</Link>
+							<Link className="nav-link" to="/logout" onClick={Close}>Log Out</Link>
 						</div>
 					)
 					: (
@@ -23,8 +23,8 @@ const NavBar = (props) => {
 							<Link className="nav-link" to="/" onClick={Close}>Home <span className="sr-only">(current)</span></Link>
 							<Link className="nav-link" to="/products" onClick={Close}>Products</Link>
 							<Link className="nav-link" to="/contact" onClick={Close}>Contact us</Link>
-							<Link className="nav-link" to="/login">Log In</Link>
-							<Link className="nav-link" to="/signup">Sign Up</Link>
+							<Link className="nav-link" to="/login" onClick={Close}>Log In</Link>
+							<Link className="nav-link" to="/signup" onClick={Close}>Sign Up</Link>
 						
 						</div>
 					)

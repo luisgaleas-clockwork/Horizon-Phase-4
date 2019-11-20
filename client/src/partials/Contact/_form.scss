@@ -98,19 +98,18 @@
     margin-top: 2vh;
   }
 }
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 900px) {
   .form-main {
     height: 90vh;
   }
   form {
     width: 40vw;
-    height: 75vh;
+    height: 90vh;
     padding: 50px;
     input {
       margin-top: 3vh;
     }
     textarea {
-      height: 40vh;
       resize: none;
     }
   }
@@ -127,7 +126,7 @@
     margin-top: 30px;
   }
   h2 {
-    padding-top: 10vh;
+    padding-top: 30vh;
   }
   .contact-main {
     padding-bottom: 10vh;
