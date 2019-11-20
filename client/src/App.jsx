@@ -3,13 +3,14 @@ import { Switch, Route, Redirect } from 'react-router-dom'
 import httpClient from './httpClient'
 
 import NavBar from './Components/Utility/NavBar'
-import LogIn from './views/LogIn'
-import LogOut from './views/LogOut'
-import SignUp from './views/SignUp'
-import RTH from './views/RTH'
-import Home from './views/Home'
-import Product from './views/ProductPage'
-import Contact from './views/ContactPage'
+import LogIn from './pages /LogIn'
+import LogOut from './pages /LogOut'
+import SignUp from './pages /SignUp'
+import RTH from './pages /RTH'
+import Home from './pages /Home'
+import Product from './pages /ProductPage'
+import Contact from './pages /ContactPage'
+import Footer from './Components/Utility/Footer'
 
 class App extends React.Component {
 	state = { currentUser: httpClient.getCurrentUser() }
@@ -53,10 +54,12 @@ class App extends React.Component {
 
 					<Route exact path="/" component={Home} />
 
-					<Route  path="/products" component={Product} />
-					<Route  path="/contact" component={Contact} />
+					<Route path="/products" component={Product} />
+					<Route path="/contact" component={Contact} />
 
 				</Switch>
+
+				<Footer />
 			</div>
 		)
 	}

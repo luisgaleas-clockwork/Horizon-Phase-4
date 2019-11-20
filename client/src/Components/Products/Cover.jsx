@@ -12,7 +12,7 @@ const Cover = (props) => {
                             <h4>{info.product_name}</h4>
                             <h4>{info.artist}</h4>
                             <p className="hide">${info.price}</p>
-                            <p>{info.descripton}</p>
+                            <p>{info.description}</p>
 
                         </div>
                     </div>
