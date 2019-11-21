@@ -1,13 +1,15 @@
 import React from 'react'
-import vipImage from '../vip.png'
 
 const RTH = (props) => {
 	return (
-		<div className='VIP'>
-			<h1>Welcome to Road to Hire!</h1>
-			<img src={vipImage} alt="VIP" />
+		<div className="video_content_container">
+			<div className="video_container">
+				<video controls>
+					<source src="../video/anime.mp4" type="video/mp4" />
+				</video>
+			</div>
 		</div>
 	)
 }
 
-export default RTH 
+export default RTH
