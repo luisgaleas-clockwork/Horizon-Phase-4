@@ -1,6 +1,6 @@
 # Horizon Beyond
 
-Fourth phase of ecommerce project "Horizon Beyond" using: 
+Fifth phase of ecommerce project "Horizon Beyond" using: 
 React.js, MongoDb, Node.js, Express, bcrypt, and morgan.
 
 ## Getting Started
